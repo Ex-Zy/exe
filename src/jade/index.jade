@@ -1,0 +1,22 @@
+extends _layout
+
+block title
+	title Title of template
+
+block content
+	include includes/header.jade
+	//BEGIN category
+	.category
+		.container
+			.row
+				.col-xs-6
+					.category__unit
+						a(href="#")
+							h2.category__title NYC Street
+								span Style
+				.col-xs-6
+					.category__unit
+						a(href="#")
+							h2.category__title New Men
+								span Collection
+	//END category

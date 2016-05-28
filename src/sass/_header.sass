@@ -1,0 +1,63 @@
+.header
+	position: relative
+	background-color: #FFF 
+.header_center
+	text-align: center
+.header__top
+	padding: 60px 0 32px
+.header__body
+	box-shadow: inset 0 -1px 0 #f3f3f3
+.header__footer
+	padding: 28px 0
+.nav
+	font-size: 0
+	a
+		display: inline-block
+		vertical-align: top
+		font: 900 14px/1 'Raleway', sans-serif
+		padding: 28px 13px 29px
+		position: relative
+		+tr(all 0.1s)
+		&:after
+			content: ''
+			display: block
+			position: absolute 
+			left: 0
+			bottom: 0
+			right: 0
+			border-bottom: 1px solid transparent
+			+tr(all 0.3s)
+		&.is-active, 
+		&:hover
+			color: $active
+			&:after
+				border-color: $active
+.u-list
+	font-size: 0
+.u-list__item
+	display: inline-block
+	vertical-align: top
+	padding: 0 11px
+	button
+		font-size: 16px
+		cursor: pointer
+.cart
+	position: relative
+	&__goods
+		position: absolute
+		top: -8px
+		right: -8px
+		display: none
+		background-color: $active
+		color: #fff
+		width: 17px
+		height: 17px
+		border-radius: 50%
+		+vertical
+		span
+			display: inline-block
+			vertical-align: middle
+			font: 500 11px "Roboto", Arial, sans-serif
+	&.is-full
+		.cart__goods
+			display: block

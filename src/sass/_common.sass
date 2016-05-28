@@ -1,0 +1,77 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+// 			+s(codedby) 
+// ## gradient example
+//     	+g(#232323, #5c5c5c);
+//	   horizontal
+//     	+gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +r(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts
+// Save fonts to /src/fonts
+// +font(book, cytiapro-black-webfont)
+// and create mixin
+// =book
+// 	font-family: "book", Arial, sans-serif
+
+body
+	font-family: Roboto, Helvetica, Arial, sans-serif
+	font-size: 14px
+	line-height: 1.4
+	font-weight: normal
+a
+	text-decoration: none
+	+tr(all 0.3s)
+	color: $basic
+%button
+	position: relative
+	border: 0
+	outline: 0
+	background-color: transparent 
+button
+	@extend %button
+// common blocks
+.container
+	min-width: 1200px !important
+	width: 1200px !important
+.title
+	font-family: 'Raleway', sans-serif
+	text-transform: uppercase
+	color: #fff
+	font-weight: 400
+	line-height: 1
+	&__bright
+		background-color: $active
+		color: #fff
+//weight
+.title_extra
+	font-weight: 800
+.title_bold
+	font-weight: 700
+.title_semi
+	font-weight: 600
+//size
+.title_ultra-large
+	font-size: 98px
+.title_very-large
+	font-size: 60px
+.title_large
+	font-size: 46px
+.title_medium
+	font-size: 31px
+.title_medium-s
+	font-size: 30px
