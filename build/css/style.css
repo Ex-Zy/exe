@@ -1354,6 +1354,11 @@ button { position: relative; border: 0; outline: 0; background-color: transparen
 .category .title { text-align: center; position: relative; padding: 20px 0; }
 .category .title:after, .category .title:before { content: ""; display: block; position: absolute; left: 0; right: 0; top: 0; margin: auto; width: 30px; height: 1px; background-color: #fff; }
 .category .title:after { top: auto; bottom: 0; }
+
+.p-list { list-style: decimal; padding: 50px 80px; font-size: 24px; }
+.p-list__item { margin-bottom: 10px; }
+.p-list__item a { color: #000; }
+.p-list__item a:hover { text-decoration: underline; }
 @media (min-width: 992px) and (max-width: 1229px){
  .visible-md{ display: block !important; }
  table.visible-md{ display: table !important; }
