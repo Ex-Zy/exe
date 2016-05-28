@@ -30,6 +30,88 @@
 		&:after
 			top: auto
 			bottom: 0
+//main-slider
+.main-slider
+	&__item
+		position: relative
+		img
+			margin: auto
+			width: 100%
+	.slick-arrow
+		top: 50%
+		transform: translateY(-50%)
+		+hide-text
+		width: 42px
+		height: 42px
+		background-color: white
+		+tr(all 0.3s)
+		&:hover
+			background-color: $basic
+			color: #fff
+	.slick-prev:before,
+	.slick-next:before
+		content: "\f104"
+		+fa-icon
+		font-size: 20px
+		background-color: transparent 
+		color: #d7d7d7
+	.slick-dots
+		margin-bottom: 37px
+		button
+			background: rgba(255, 255, 255, 0.2)
+			box-shadow: none
+		.slick-active
+			button
+				background: #FFF
+		
+.slogan
+	max-width: 1200px
+	padding: 0 15px
+	position: absolute
+	z-index: 1
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	margin: auto
+	+vertical
+	text-align: left
+	img
+		margin: auto
+		width: auto
+	&__in
+		display: inline-block
+		max-width: 670px
+		text-align: center
+		display: inline-block
+		vertical-align: middle
+	&__top
+		margin-bottom: 13px
+	&__body
+		position: relative
+		padding: 40px 0
+		margin-bottom: 30px
+		&:before,
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: auto
+			background-color: #FFF
+			width: 170px
+			height: 2px
+			background-color: white
+		&:after
+			top: auto
+			bottom: 0
+	&__bottom
+		padding: 0 132px
+		p
+			color: #b7b7b7
+			line-height: 18px
 //p-list
 .p-list
 	list-style: decimal
