@@ -4,5 +4,29 @@
 	&__unit
 		height: 218px
 		overflow: hidden
-	a
 		display: block
+		+vertical
+		text-align: right
+	&__unit-text
+		padding: 0 45px
+		display: inline-block
+		vertical-align: middle
+	.title
+		text-align: center
+		position: relative
+		padding: 20px 0
+		&:after,
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			margin: auto
+			width: 30px
+			height: 1px
+			background-color: #fff
+		&:after
+			top: auto
+			bottom: 0

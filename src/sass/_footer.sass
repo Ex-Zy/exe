@@ -1,0 +1,30 @@
+.footer
+	position: relative
+	&__body
+		background-color: #252525
+		padding: 80px 0
+	&__bottom
+		background-color: #1e1e1e
+	&__about
+		text-align: center
+		line-height: 20px
+		.logo
+			margin-bottom: 28px
+		p
+			color: #636363
+			margin-bottom: 33px
+		.copy
+			font-size: 13px
+			color: #464646
+			a
+				color: #959595
+				&:hover
+					color: darken(#959595, 10%)
+.payments-list
+	height: 81px
+	+vertical
+	&__item
+		display: inline-block
+		vertical-align: middle
+		&:not(:first-child)
+			margin-left: 15px

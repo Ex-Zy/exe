@@ -1305,6 +1305,21 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .cart__goods span { display: inline-block; vertical-align: middle; font: 500 11px "Roboto", Arial, sans-serif; }
 .cart.is-full .cart__goods { display: block; }
 
+.footer { position: relative; }
+.footer__body { background-color: #252525; padding: 80px 0; }
+.footer__bottom { background-color: #1e1e1e; }
+.footer__about { text-align: center; line-height: 20px; }
+.footer__about .logo { margin-bottom: 28px; }
+.footer__about p { color: #636363; margin-bottom: 33px; }
+.footer__about .copy { font-size: 13px; color: #464646; }
+.footer__about .copy a { color: #959595; }
+.footer__about .copy a:hover { color: #7c7c7c; }
+
+.payments-list { height: 81px; text-align: center; font-size: 0; }
+.payments-list:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.payments-list__item { display: inline-block; vertical-align: middle; }
+.payments-list__item:not(:first-child) { margin-left: 15px; }
+
 body { font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; font-weight: normal; }
 
 a { text-decoration: none; -webkit-transition: all 0.3s; transition: all 0.3s; color: #363636; }
@@ -1314,7 +1329,7 @@ button { position: relative; border: 0; outline: 0; background-color: transparen
 .container { min-width: 1200px !important; width: 1200px !important; }
 
 .title { font-family: "Raleway", sans-serif; text-transform: uppercase; color: #fff; font-weight: 400; line-height: 1; }
-.title_bright { background-color: #e5493a; color: #fff; display: inline-block; }
+.title_bright { background-color: #e5493a; color: #fff; display: inline-block; padding: 2px 4px; }
 
 .title_extra { font-weight: 800; }
 
@@ -1333,8 +1348,12 @@ button { position: relative; border: 0; outline: 0; background-color: transparen
 .title_medium-s { font-size: 30px; }
 
 .category { position: relative; }
-.category__unit { height: 218px; overflow: hidden; }
-.category a { display: block; }
+.category__unit { height: 218px; overflow: hidden; display: block; text-align: center; font-size: 0; text-align: right; }
+.category__unit:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.category__unit-text { padding: 0 45px; display: inline-block; vertical-align: middle; }
+.category .title { text-align: center; position: relative; padding: 20px 0; }
+.category .title:after, .category .title:before { content: ""; display: block; position: absolute; left: 0; right: 0; top: 0; margin: auto; width: 30px; height: 1px; background-color: #fff; }
+.category .title:after { top: auto; bottom: 0; }
 @media (min-width: 992px) and (max-width: 1229px){
  .visible-md{ display: block !important; }
  table.visible-md{ display: table !important; }
