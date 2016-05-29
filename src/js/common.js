@@ -8,4 +8,12 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 	});
 
+	$('.js-slider').slick({
+		dots: true,
+		infinite: true,
+		speed: 400,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+	});
+
 });
