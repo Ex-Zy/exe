@@ -74,70 +74,6 @@ block content
 							p.
 								Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
 	//END top
-	//BEGIN featured
-	.featured
-		.container
-			.row
-				.featured__top
-					h3.title Featured Products
-					p.
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-				.goods.js-slider
-					.goods__item
-						.goods__pic
-							img(src="img/home-1/product1.jpg", alt="")
-							.badge.is-new
-								new
-						.goods__body
-							.goods__title Product Title Here
-							.goods__price
-								.price $72.00
-					.goods__item
-						.goods__pic
-							img(src="img/home-1/product1.jpg", alt="")
-							.badge.is-new
-								new
-						.goods__body
-							.goods__title Product Title Here
-							.goods__price
-								.price $72.00
-					.goods__item
-						.goods__pic
-							img(src="img/home-1/product1.jpg", alt="")
-							.badge.is-new
-								new
-						.goods__body
-							.goods__title Product Title Here
-							.goods__price
-								.price $72.00
-					.goods__item
-						.goods__pic
-							img(src="img/home-1/product1.jpg", alt="")
-							.badge.is-new
-								new
-						.goods__body
-							.goods__title Product Title Here
-							.goods__price
-								.price $72.00
-					.goods__item
-						.goods__pic
-							img(src="img/home-1/product1.jpg", alt="")
-							.badge.is-new
-								new
-						.goods__body
-							.goods__title Product Title Here
-							.goods__price
-								.price $72.00
-					.goods__item
-						.goods__pic
-							img(src="img/home-1/product1.jpg", alt="")
-							.badge.is-new
-								new
-						.goods__body
-							.goods__title Product Title Here
-							.goods__price
-								.price $72.00
-	//END featured
 	//BEGIN category
 	.category
 		.container
@@ -153,4 +89,102 @@ block content
 							h2.title.title_bold.title_medium-s New Men <br>
 								span.title_bright Collection
 	//END category
+	//BEGIN featured
+	.featured
+		.container
+			.row
+				.featured__top
+					h3.title.title_medium.title_dark Featured Products
+					p.
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+				.featured-products.js-slider
+					.featured-products__item
+						.item
+							.item__pic
+								img(src="img/home-1/product1.jpg", alt="")
+								.badge
+									.badge__item.is-new new
+							.item__body
+								.item__title Product Title Here
+								.item__price
+									.price.price_old $58.00
+									.price $72.00
+					.featured-products__item
+						.item
+							.item__pic
+								img(src="img/home-1/product2.jpg", alt="")
+								.badge
+									.badge__item.is-sale sale
+							.item__body
+								.item__title Product Title Here
+								.item__price
+									.price.price_old $58.00
+									.price.price_new $58.00
+					.featured-products__item
+						.item
+							.item__pic
+								img(src="img/home-1/product3.jpg", alt="")
+								.badge
+									.badge__item.is-hot hot
+							.item__body
+								.item__title Product Title Here
+								.item__price
+									.price $72.00
+					.featured-products__item
+						.item
+							.item__pic
+								img(src="img/home-1/product4.jpg", alt="")
+							.item__body
+								.item__title Product Title Here
+								.item__price
+									.price.price_new $999.00
+					.featured-products__item
+						.item
+							.item__pic
+								img(src="img/home-1/product1.jpg", alt="")
+								.badge
+									.badge__item.is-new new
+							.item__body
+								.item__title Product Title Here
+								.item__price
+									.price.price_old $58.00
+									.price $72.00
+					.featured-products__item
+						.item
+							.item__pic
+								img(src="img/home-1/product2.jpg", alt="")
+								.badge
+									.badge__item.is-sale sale
+							.item__body
+								.item__title Product Title Here
+								.item__price
+									.price.price_old $58.00
+									.price.price_new $58.00
+					.featured-products__item
+						.item
+							.item__pic
+								img(src="img/home-1/product3.jpg", alt="")
+								.badge
+									.badge__item.is-hot hot
+							.item__body
+								.item__title Product Title Here
+								.item__price
+									.price $72.00
+					.featured-products__item
+						.item
+							.item__pic
+								img(src="img/home-1/product4.jpg", alt="")
+							.item__body
+								.item__title Product Title Here
+								.item__price
+									.price.price_new $999.00
+
+	//END featured
+	//BEGIN banner
+	.banner
+		.container
+			.banner__text
+				h2.title.title_ultra-bold.title_very-large Free Shipping On All <br>
+					span.title.title_ultra-bold.title_large.title_bright Orders Over $60
+	//END banner
 	include includes/footer.jade
