@@ -31,6 +31,7 @@
 		&:after
 			top: auto
 			bottom: 0
+			
 //main-slider
 .main-slider
 	margin-bottom: 80px
@@ -54,9 +55,12 @@
 	.slick-next:before
 		content: "\f104"
 		+fa-icon
-		font-size: 20px
+		font-size: 28px
 		background-color: transparent 
 		color: #d7d7d7
+		+vcenter
+	.slick-next:before
+		content: "\f105"
 	.slick-dots
 		margin-bottom: 37px
 		button
@@ -141,6 +145,39 @@
 	position: relative
 	padding-bottom: 70px
 	margin-bottom: 80px
+	.slick-arrow
+		bottom: 0
+		top: auto
+		width: 30px
+		height: 30px
+		left: 50%
+		&:before
+			+fa-icon
+			font-size: 30px
+			color: #e1e1e1
+			background: transparent
+			+tr(color 0.3s)
+		&:hover
+			&:before
+				color: $active
+	.slick-prev
+		margin-left: -30px
+		&:before
+			content: "\f104"
+	.slick-next
+		margin-right: -31px
+		&:before
+			content: "\f105"
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 1px
+			top: 0
+			bottom: 0
+			left: 0px
+			background-color: #ebebeb
+			
 .item
 	height: 353px+80px
 	padding: 0 15px 0
@@ -173,3 +210,31 @@
 		padding: 79px 0
 		h2
 			color: $basic
+.brands
+	position: relative
+	padding: 80px 0
+	&__item
+		height: 88px
+		+vertical
+		img
+			display: inline-block
+			vertical-align: middle
+	.slick-arrow
+		background: transparent
+		background-color: #f3f3f3
+		&:before
+			+fa-icon
+			+vcenter
+			font-size: 30px
+			color: #fff
+			background: transparent 
+			+tr(color 0.3s)
+		&:hover
+			&:before
+				color: $active
+	.slick-prev
+		&:before
+			content: "\f104"
+	.slick-next
+		&:before
+			content: "\f105"
