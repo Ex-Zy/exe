@@ -11,9 +11,9 @@ $(document).ready(function() {
 	$('.js-slider').slick({
 		dots: true,
 		infinite: true,
-		speed: 400,
+		speed: 800,
 		slidesToShow: 4,
-		slidesToScroll: 4,
+		slidesToScroll: 1,
 		dots: false,
 	});
 

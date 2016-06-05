@@ -89,97 +89,113 @@ block content
 							h2.title.title_bold.title_medium-s New Men <br>
 								span.title_bright Collection
 	//END category
-	//BEGIN featured
-	.featured
+	//BEGIN section
+	section.section
 		.container
-			.row
-				.featured__top
-					h3.title.title_medium.title_dark Featured Products
-					p.
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-				.featured-products.js-slider
-					.featured-products__item
+			.section__top
+				h3.title.title_medium.title_dark Featured Products
+				p.
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+			.section__body
+				.featured.js-slider
+					.featured__item
 						.item
 							.item__pic
-								img(src="img/home-1/product1.jpg", alt="")
-								.badge
-									.badge__item.is-new new
+								a(href="#")
+									img(src="img/home-1/product1.jpg", alt="")
+									.badge
+										.badge__item.is-new new
 							.item__body
-								.item__title Product Title Here
+								.item__title
+									a(href="#") Product Title Here
 								.item__price
 									.price.price_old $58.00
 									.price $72.00
-					.featured-products__item
+					.featured__item
 						.item
 							.item__pic
-								img(src="img/home-1/product2.jpg", alt="")
-								.badge
-									.badge__item.is-sale sale
+								a(href="#")
+									img(src="img/home-1/product2.jpg", alt="")
+									.badge
+										.badge__item.is-sale sale
 							.item__body
-								.item__title Product Title Here
+								.item__title
+									a(href="#") Product Title Here
 								.item__price
 									.price.price_old $58.00
 									.price.price_new $58.00
-					.featured-products__item
+					.featured__item
 						.item
 							.item__pic
-								img(src="img/home-1/product3.jpg", alt="")
-								.badge
-									.badge__item.is-hot hot
+								a(href="#")
+									img(src="img/home-1/product3.jpg", alt="")
+									.badge
+										.badge__item.is-hot hot
 							.item__body
-								.item__title Product Title Here
+								.item__title
+									a(href="#") Product Title Here
 								.item__price
 									.price $72.00
-					.featured-products__item
+					.featured__item
 						.item
 							.item__pic
-								img(src="img/home-1/product4.jpg", alt="")
+								a(href="#")
+									img(src="img/home-1/product4.jpg", alt="")
 							.item__body
-								.item__title Product Title Here
+								.item__title
+									a(href="#") Product Title Here
 								.item__price
 									.price.price_new $999.00
-					.featured-products__item
+					.featured__item
 						.item
 							.item__pic
-								img(src="img/home-1/product1.jpg", alt="")
-								.badge
-									.badge__item.is-new new
+								a(href="#")
+									img(src="img/home-1/product1.jpg", alt="")
+									.badge
+										.badge__item.is-new new
 							.item__body
-								.item__title Product Title Here
+								.item__title
+									a(href="#") Product Title Here
 								.item__price
 									.price.price_old $58.00
 									.price $72.00
-					.featured-products__item
+					.featured__item
 						.item
 							.item__pic
-								img(src="img/home-1/product2.jpg", alt="")
-								.badge
-									.badge__item.is-sale sale
+								a(href="#")
+									img(src="img/home-1/product2.jpg", alt="")
+									.badge
+										.badge__item.is-sale sale
 							.item__body
-								.item__title Product Title Here
+								.item__title
+									a(href="#") Product Title Here
 								.item__price
 									.price.price_old $58.00
 									.price.price_new $58.00
-					.featured-products__item
+					.featured__item
 						.item
 							.item__pic
-								img(src="img/home-1/product3.jpg", alt="")
-								.badge
-									.badge__item.is-hot hot
+								a(href="#")
+									img(src="img/home-1/product3.jpg", alt="")
+									.badge
+										.badge__item.is-hot hot
 							.item__body
-								.item__title Product Title Here
+								.item__title
+									a(href="#") Product Title Here
 								.item__price
 									.price $72.00
-					.featured-products__item
+					.featured__item
 						.item
 							.item__pic
-								img(src="img/home-1/product4.jpg", alt="")
+								a(href="#")
+									img(src="img/home-1/product4.jpg", alt="")
 							.item__body
-								.item__title Product Title Here
+								.item__title
+									a(href="#") Product Title Here
 								.item__price
 									.price.price_new $999.00
 
-	//END featured
+	//END section
 	//BEGIN banner
 	.banner
 		.container
@@ -187,6 +203,221 @@ block content
 				h2.title.title_ultra-bold.title_very-large Free Shipping On All <br>
 					span.title.title_ultra-bold.title_large.title_bright Orders Over $60
 	//END banner
+	//BEGIN section
+	section.section
+		.container
+			.section__top
+				h3.title.title_medium.title_dark We Recommend You
+				p.
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+			.section__body
+				.we-recommend
+					.row
+						.col.col--3-of-12
+							.item
+								.item__pic
+									a(href="#")
+										img(src="img/home-1/product5.jpg", alt="")
+										.overlay
+										ul.u-list
+											li.u-list__item
+												button(type="button" class="wishlist")
+													i.icon-wishlist
+											li.u-list__item
+												button(type="button" class="cart is-full")
+													i.icon-cart
+										.rating
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star
+								.item__body
+									.item__title
+										a(href="#") Product Title Here
+									.item__price
+										.price $230.99
+						.col.col--3-of-12
+							.item
+								.item__pic
+									a(href="#")
+										img(src="img/home-1/product6.jpg", alt="")
+										.badge
+											.badge__item.is-hot hot
+										.overlay
+										ul.u-list
+											li.u-list__item
+												button(type="button" class="wishlist")
+													i.icon-wishlist
+											li.u-list__item
+												button(type="button" class="cart is-full")
+													i.icon-cart
+										.rating
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star
+								.item__body
+									.item__title
+										a(href="#") Product Title Here
+									.item__price
+										.price $72.00
+						.col.col--3-of-12
+							.item
+								.item__pic
+									a(href="#")
+										img(src="img/home-1/product7.jpg", alt="")
+										.badge
+											.badge__item.is-sale sale
+										.overlay
+										ul.u-list
+											li.u-list__item
+												button(type="button" class="wishlist")
+													i.icon-wishlist
+											li.u-list__item
+												button(type="button" class="cart is-full")
+													i.icon-cart
+										.rating
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star
+								.item__body
+									.item__title
+										a(href="#") Product Title Here
+									.item__price
+										.price.price_old $58.00
+										.price $72.00
+						.col.col--3-of-12
+							.item
+								.item__pic
+									a(href="#")
+										img(src="img/home-1/product8.jpg", alt="")
+										.overlay
+										ul.u-list
+											li.u-list__item
+												button(type="button" class="wishlist")
+													i.icon-wishlist
+											li.u-list__item
+												button(type="button" class="cart is-full")
+													i.icon-cart
+										.rating
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star
+								.item__body
+									.item__title
+										a(href="#") Product Title Here
+									.item__price
+										.price.price_new $99.00
+						.col.col--3-of-12
+							.item
+								.item__pic
+									a(href="#")
+										img(src="img/home-1/product9.jpg", alt="")
+										.badge
+											.badge__item.is-sale sale
+										.overlay
+										ul.u-list
+											li.u-list__item
+												button(type="button" class="wishlist")
+													i.icon-wishlist
+											li.u-list__item
+												button(type="button" class="cart is-full")
+													i.icon-cart
+										.rating
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star
+								.item__body
+									.item__title
+										a(href="#") Product Title Here
+									.item__price
+										.price $99.00
+						.col.col--3-of-12
+							.item
+								.item__pic
+									a(href="#")
+										img(src="img/home-1/product10.jpg", alt="")
+										.overlay
+										ul.u-list
+											li.u-list__item
+												button(type="button" class="wishlist")
+													i.icon-wishlist
+											li.u-list__item
+												button(type="button" class="cart is-full")
+													i.icon-cart
+										.rating
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star
+								.item__body
+									.item__title
+										a(href="#") Product Title Here
+									.item__price
+										.price.price_old $58.00
+										.price $72.00
+						.col.col--3-of-12
+							.item
+								.item__pic
+									a(href="#")
+										img(src="img/home-1/product11.jpg", alt="")
+										.badge
+											.badge__item.is-new new
+										.overlay
+										ul.u-list
+											li.u-list__item
+												button(type="button" class="wishlist")
+													i.icon-wishlist
+											li.u-list__item
+												button(type="button" class="cart is-full")
+													i.icon-cart
+										.rating
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star
+								.item__body
+									.item__title
+										a(href="#") Product Title Here
+									.item__price
+										.price $999.
+						.col.col--3-of-12
+							.item
+								.item__pic
+									a(href="#")
+										img(src="img/home-1/product12.jpg", alt="")
+										.overlay
+										ul.u-list
+											li.u-list__item
+												button(type="button" class="wishlist")
+													i.icon-wishlist
+											li.u-list__item
+												button(type="button" class="cart is-full")
+													i.icon-cart
+										.rating
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star.is-active
+											.star
+								.item__body
+									.item__title
+										a(href="#") Product Title Here
+									.item__price
+										.price.price_old $58.00
+										.price $72.00
+						a(href="#" class="more-link") Load More Products
+	//END section
 	//BEGIN newsletter
 	.newsletter
 		.container
